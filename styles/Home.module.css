@@ -1,0 +1,22 @@
+.popularitySelect {
+  display: block;
+  padding: 11px 29px 11px 18px;
+  background: #f9f9f9;
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 28px;
+  letter-spacing: 0.2px;
+  color: #737373;
+  transition: 0.3 ease-in;
+}
+.popularitySelect:hover{
+    opacity: 0.6;
+    transition: 0.3 ease-in;
+}
+
+
+
