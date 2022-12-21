@@ -2,6 +2,9 @@ import Head from 'next/head'
 import { Inter } from '@next/font/google'
 import PopularitySelect from '../components/PopularitySelect'
 import SearchInput from '../components/SearchInput'
+import ViewsButton from '../components/ViewsButton'
+import { LinearDemo } from '../components/svg'
+import { GridDemo } from '../components/svg'
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -18,6 +21,8 @@ export default function Home() {
         beauty Shop
         <PopularitySelect />
         <SearchInput />
+        <ViewsButton viewsIcon={<LinearDemo />} />
+        <ViewsButton viewsIcon={<GridDemo />} />
       </main>
     </>
   )

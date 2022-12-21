@@ -13,6 +13,7 @@
   color: #737373;
   transition: 0.3 ease-in;
 }
+
 .popularitySelect:hover {
   opacity: 0.6;
   transition: 0.3 ease-in;
@@ -52,4 +53,12 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 28px;
+}
+
+.viewsButton {
+  border: 1px solid #ececec;
+  border-radius: 5px;
+  margin: auto;
+  width: 46px;
+  height: 46px;
 }
