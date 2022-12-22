@@ -1,6 +1,11 @@
 import Head from 'next/head'
 import { Inter } from '@next/font/google'
 import Intro from '../components/Intro';
+import PopularitySelect from '../components/PopularitySelect'
+import SearchInput from '../components/SearchInput'
+import ViewsButton from '../components/ViewsButton'
+import { LinearDemo } from '../components/svg'
+import { GridDemo } from '../components/svg'
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -14,8 +19,11 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <main >
-        beauty Shop
         <Intro />
+        <PopularitySelect />
+        <SearchInput />
+        <ViewsButton viewsIcon={<LinearDemo />} />
+        <ViewsButton viewsIcon={<GridDemo />} />
       </main>
     </>
   )
