@@ -1,0 +1,88 @@
+.container{
+    max-width: 1042px;
+    margin:0 auto;
+}
+.headerWrapper{
+    background-color: cadetblue;
+    padding:23px 0;
+}
+.headerMain{
+    display: flex;
+    justify-content: space-between;
+ 
+}
+.headerLogo{
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 35px;
+    letter-spacing: 0.1px;
+    color: #FFFFFF;
+    text-decoration: none;
+   
+}
+.headerMenu{
+    display: flex;
+    align-items: center;
+  
+}
+.headerList{
+    display: flex;
+    list-style-type: none;
+}
+.headerLink{
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    margin-right:23px;
+    color: #FFFFFF;
+    text-decoration: none;
+
+
+}
+.headerSearch{
+    display: flex;
+    align-items: center;
+}
+.headereLogin{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+    margin-left:5px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.headericon{
+    margin-right:30px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+    cursor: pointer
+}
+.headerLike{
+ margin-left:6px;
+}
+.headerLeft{
+    display: inline-block;
+}
+.headerRight{
+    display: flex;
+    /* justify-content: space-between; */
+    margin-left:30px;
+}
