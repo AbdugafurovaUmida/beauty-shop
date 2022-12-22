@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from "../styles/Header.module.css";
 import Link from 'next/link';
-import { Basket, Like, Login, Search, Vector, } from './svg';
+import { Basket, Like, User, Search, Vector, } from '../components/svg';
 
    const headerLinks = [
         {
@@ -60,11 +60,12 @@ function Header (){
                         </div>
 
                         <div className={styles.headerSearch}>
-                            <Login/>
-                            <span className={styles.headereLogin}>Login/Register</span>
-                            <Search/>
-                            <Basket/>
-                            <Like/>
+                            <User/>
+                            <span className={styles.headereLogin}>Login / Register</span>
+                            <span className={styles.headericon}> <Search /></span>
+                            <span className={styles.headericon}><Basket/> 1 </span>
+                            <span className={styles.headerLike}><Like/> 1 </span>
+                           
                         </div>
                     </div>
                </div>

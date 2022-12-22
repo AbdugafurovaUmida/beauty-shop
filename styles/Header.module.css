@@ -56,4 +56,27 @@
     text-align: center;
     letter-spacing: 0.2px;
     color: #FFFFFF;
+    margin:0 30px 0 5px;
+}
+
+.headericon{
+    margin-right:30px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+}
+.headerLike{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #FFFFFF; 
 }
