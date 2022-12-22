@@ -1,0 +1,24 @@
+.intro {
+  background-image: url('../images/hero-picture.png');
+  background-size:100%;
+  background-repeat:no-repeat;
+  height: 420px;
+  /* height:100%; */
+}
+
+.introTitle {
+    margin:0;
+  padding-top: 80px;
+  padding-bottom:58px;
+  font-weight: 500;
+  font-size: 80px;
+  line-height: 90px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: #ffffff;
+}
+
+.cardsWrapper{
+  display:flex;
+  justify-content:space-between;
+}

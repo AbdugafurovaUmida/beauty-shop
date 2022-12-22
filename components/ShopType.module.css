@@ -1,0 +1,32 @@
+.card {
+  display: flex;
+  align-items: center;
+}
+
+.squareIcon {
+ 
+  display: block;
+}
+
+.cardInfo {
+    margin-left: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.cardTitle {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 26px;
+  letter-spacing: 0.1px;
+  color: #ffffff;
+  margin-bottom: 5px;
+}
+
+.goodsAmount {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.2px;
+  color: #ffffff;
+}
