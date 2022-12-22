@@ -47,25 +47,30 @@ function Header (){
             <header className={styles.headerWrapper}>
                <div className={styles.container}>
                     <div className={styles.headerMain}>
-                        <div>
-                        <h3 className={styles.headerTitle}>Lovely</h3>
-                        </div>
-
+                       <div>
+                            <Link href="/" className={styles.headerLogo}>Lovely</Link>
+                        </div> 
+                   
                         <div className={styles.headerMenu}>
                             <ul className={styles.headerList}>
                                 {headerLinks.map((item)=>(
-                                    <li key={item.id} ><Link className={styles.headerLink} href={item.link}>{item.label}</Link><Vector/></li>
+                                    <li key={item.id} ><Link className={styles.headerLink} href={item.link}>{item.label}</Link></li>
                                 ))}
                             </ul>
                         </div>
 
                         <div className={styles.headerSearch}>
-                            <User/>
-                            <span className={styles.headereLogin}>Login / Register</span>
-                            <span className={styles.headericon}> <Search /></span>
-                            <span className={styles.headericon}><Basket/> 1 </span>
-                            <span className={styles.headerLike}><Like/> 1 </span>
-                           
+                            <div className={styles.headerLeft}>
+                                <span><User/> </span>
+                                <div className={styles.headereLogin}>Login /</div>
+                                <div className={styles.headereLogin}>Register</div>
+                            </div>
+                        
+                            <div className={styles.headerRight}>
+                                <div className={styles.headericon}><Search /></div>
+                                <div className={styles.headericon}><Basket/><span className={styles.headerLike}>1</span></div>
+                                <div className={styles.headericon}><Like/> <span className={styles.headerLike}>1</span></div>
+                            </div>     
                         </div>
                     </div>
                </div>
