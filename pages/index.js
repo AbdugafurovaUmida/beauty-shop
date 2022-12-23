@@ -4,8 +4,10 @@ import Intro from '../components/Intro';
 import PopularitySelect from '../components/PopularitySelect'
 import SearchInput from '../components/SearchInput'
 import ViewsButton from '../components/ViewsButton'
+import BrandChackbox from '../components/BrandChackbox';
 import { LinearDemo } from '../components/svg'
 import { GridDemo } from '../components/svg'
+import ColorChoose from '../components/ColorChoose';
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -24,6 +26,8 @@ export default function Home() {
         <SearchInput />
         <ViewsButton viewsIcon={<LinearDemo />} />
         <ViewsButton viewsIcon={<GridDemo />} />
+        <BrandChackbox/>
+        <ColorChoose/>
       </main>
     </>
   )
