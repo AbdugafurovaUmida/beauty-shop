@@ -2,15 +2,14 @@ import React from 'react'
 import  styles from "../styles/BrandChackbox.module.css"
 
 
-const BrandChackbox = () => {
-
-
+export default function BrandChackbox  (data) {
+console.log(data, 'kuhgksdufnvs')
   return (
-    <div className={styles.chackboxMain}>
-        <input type='checkbox' className={styles.chackbox}/>
-        <span className={styles.chackboxTitle} >Make Up</span>
+    
+    <div className={styles.checkboxMain}>
+        <input type='checkbox'  id={data.id}/>
+        <label  for={data.id}>{data.name}</label>
     </div>
   )
 }
 
-export default BrandChackbox

@@ -1,13 +1,13 @@
-.chackbox{
-    width: 25px;
-    height: 25px;
-    background: #FFFFFF;
-    border: 1px solid rgba(220, 220, 220, 1);
-    border-radius: 5px;
-    margin-right:13px;
 
+.checkboxMain{
+    display: flex;
+    align-items: center;
+   
 }
-.chackboxTitle{
+
+.checkboxMain label{
+    cursor: pointer;
+    display: flex;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
@@ -15,8 +15,34 @@
     line-height: 24px;
     letter-spacing: 0.2px;
     color: #737373;
+    cursor: pointer; 
 }
-.chackboxMain{
+
+.checkboxMain input [type="checkbox"]{
+    cursor: pointer;
+    opacity: 0.5;
+    position: absolute;
+    
+}
+.checkboxMain label::before{
+    content: '';
+    width: 25px;
+    height: 25px;
+    border: 1px solid rgba(220, 220, 220, 1);
+    border-radius: 5px;
+    margin-right:.5em;
+    
+}
+
+.checkboxMain input[type="checkbox"]:focus + label::before{
+    box-shadow: 0 0  20px rgb(213, 211, 211);
+}
+
+.checkboxMain input[type="checkbox"]:checked + label::before {
+    content: "\002714";
+    background-color: rgb(9, 182, 9);
     display: flex;
+    justify-content: center;
     align-items: center;
+    color:white;
 }

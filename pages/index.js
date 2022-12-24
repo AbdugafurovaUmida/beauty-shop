@@ -12,7 +12,57 @@ import ColorChoose from '../components/ColorChoose';
 
 const inter = Inter({ subsets: ['latin'] })
 
+const brandCheckbox = [
+  {
+    id:0,
+    name:"Body Spray"
+  },
+  {
+    id:1,
+    name:"Skin Care"
+  },
+  {
+    id:2,
+    name:"Body Spray "
+  },
+  {
+    id:3,
+    name:"Make Up "
+  },
+  {
+    id:4,
+    name:"Body Spray"
+  },
+  {
+    id:5,
+    name:"Make Up "
+  },
+  {
+    id:6,
+    name:"BB Creams "
+  },
+]
+
+const color = [
+  {
+    id:0,
+    color: ' #23856D;'
+  },
+  {
+    id:1,
+    color: ' #47AD97;'
+  },
+  {
+    id:2,
+    color: ' #E74040;'
+  },
+  {
+    id:3,
+    color: ' #252B42;'
+  },
+]
 export default function Home() {
+
   return (
     <>
       <Head>
@@ -26,8 +76,16 @@ export default function Home() {
         <SearchInput />
         <ViewsButton viewsIcon={<LinearDemo />} />
         <ViewsButton viewsIcon={<GridDemo />} />
-        <BrandChackbox/>
-        <ColorChoose/>
+        {brandCheckbox.map((el, index)=>{
+          // console.log(el, "gulbahor");
+           <BrandChackbox  data={el} key={index}/>
+        })} 
+        {
+          color.map((el, index)=>{
+            <ColorChoose props={el} key={index}/>
+          })
+        }
+        
       </main>
     </>
   )
