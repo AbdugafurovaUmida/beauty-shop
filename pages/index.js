@@ -46,19 +46,23 @@ const brandCheckbox = [
 const color = [
   {
     id:0,
-    color: ' #23856D;'
+    color: '#23856D',
+    name:"Green"
   },
   {
     id:1,
-    color: ' #47AD97;'
+    color: '#47AD97',
+    name:"Cosmetic "
   },
   {
     id:2,
-    color: ' #E74040;'
+    color: '#E74040',
+    name:"Spa"
   },
   {
     id:3,
-    color: ' #252B42;'
+    color: ' #252B42',
+    name:"BB Creams "
   },
 ]
 export default function Home() {
@@ -76,14 +80,13 @@ export default function Home() {
         <SearchInput />
         <ViewsButton viewsIcon={<LinearDemo />} />
         <ViewsButton viewsIcon={<GridDemo />} />
-        {brandCheckbox.map((el, index)=>{
-          // console.log(el, "gulbahor");
+        {brandCheckbox.map((el, index)=>(
            <BrandChackbox  data={el} key={index}/>
-        })} 
+        ))} 
         {
-          color.map((el, index)=>{
+          color.map((el, index)=>(
             <ColorChoose props={el} key={index}/>
-          })
+          ))
         }
         
       </main>

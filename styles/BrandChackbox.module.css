@@ -18,10 +18,11 @@
     cursor: pointer; 
 }
 
-.checkboxMain input [type="checkbox"]{
+.checkboxMain input[type="checkbox"]{
     cursor: pointer;
-    opacity: 0.5;
+    opacity: 0;
     position: absolute;
+    /* display: none; */
     
 }
 .checkboxMain label::before{
@@ -40,7 +41,7 @@
 
 .checkboxMain input[type="checkbox"]:checked + label::before {
     content: "\002714";
-    background-color: rgb(9, 182, 9);
+    background-color: rgb(1, 68, 1);
     display: flex;
     justify-content: center;
     align-items: center;

@@ -1,12 +1,13 @@
 .colorMain{
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
 
 .colorSort{
     width: 30px;
     height: 30px;
-    background: #23856D;
+    /* background: #23856D; */
     border: 2px solid #FFFFFF;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 50%;
