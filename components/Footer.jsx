@@ -63,8 +63,9 @@ function Footer (){
     return (
         <>
             <footer className={styles.footer}>
-                <div className='container'>
-                    <div className={styles.footerRow}>
+                <div className={styles.footerTop}>
+                    <div className='container'>
+                      <div className={styles.footerTopRow}>
                         <ul className={styles.footerNav}>
                             <h5 className={styles.footerTitle}>Company Info</h5>
                             {companyInfoLinks.map((item, index) => (
@@ -100,6 +101,12 @@ function Footer (){
                             </form>
                             <p className={styles.subscribeText}>Lore imp sum dolor Amit</p>
                         </ul>
+                      </div>
+                    </div>
+                </div>
+                <div className={styles.footerBottom}>
+                    <div className='container'>
+                        <p className={styles.footerBottomText}>Made With Love By Finland All Right Reserved </p>
                     </div>
                 </div>
             </footer>
