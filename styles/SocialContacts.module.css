@@ -1,0 +1,36 @@
+.footerLogo {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 35px;
+  letter-spacing: 0.1px;
+  color: #252b42;
+  text-decoration: none;
+}
+
+.socialContacts{
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+    padding: 53px 0 54px;
+    border-bottom: 1px solid #E6E6E6;
+    padding-right: 70px;
+}
+
+.socialMenu {
+  display: flex;
+  align-items: center;
+}
+
+.socialMenu li:not(:last-child){
+  margin-right: 20px;
+}
+
+.socialMenu li{
+    transition: 0.3s ease-in-out;
+}
+
+.socialMenu li:hover{
+    transform: translateY(-10px);
+}

@@ -1,0 +1,10 @@
+.partnersWrapper{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.partnersSection{
+    background-color: #FAFAFA;
+    padding: 50px 0;
+}
