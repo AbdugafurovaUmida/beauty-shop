@@ -6,6 +6,8 @@ import SearchInput from '../components/SearchInput'
 import ViewsButton from '../components/ViewsButton'
 import { LinearDemo } from '../components/svg'
 import { GridDemo } from '../components/svg'
+import SocialContacts from '../components/SocialContacts';
+import Partners from '../components/Partners';
 
 
 // const inter = Inter({ subsets: ['latin'] })
@@ -25,6 +27,8 @@ export default function Home() {
         <SearchInput />
         <ViewsButton viewsIcon={<LinearDemo />} />
         <ViewsButton viewsIcon={<GridDemo />} />
+        <Partners />
+        <SocialContacts />
       </main>
     </>
   )
