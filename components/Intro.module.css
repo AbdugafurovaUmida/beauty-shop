@@ -1,15 +1,19 @@
 .intro {
-  background-image: url('../images/hero-picture.png');
-  background-size:100%;
-  background-repeat:no-repeat;
-  height: 420px;
+  background-blend-mode: multiply;
+  background-image: url('../assets/img/intro-bg.jpg');
+  background-color: rgba(0, 0, 0, 0.5);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-top: -82px;
+  padding-bottom: 96px;
   /* height:100%; */
 }
 
 .introTitle {
     margin:0;
-  padding-top: 80px;
-  padding-bottom:58px;
+  padding-top: 137px;
+  padding-bottom:49px;
   font-weight: 500;
   font-size: 80px;
   line-height: 90px;
