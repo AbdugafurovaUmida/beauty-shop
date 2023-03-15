@@ -10,6 +10,7 @@ import { GridDemo } from "../components/svg";
 import ColorChoose from "../components/ColorChoose";
 import SocialContacts from "../components/SocialContacts";
 import Partners from "../components/Partners";
+import Tab from "../components/Tab"
 
 // const inter = Inter({ subsets: ['latin'] })
 
@@ -91,7 +92,7 @@ export default function Home() {
         {color.map((el, index) => (
           <ColorChoose props={el} key={index} />
         ))}
-
+        <Tab/>
         <Partners />
         <SocialContacts />
       </main>
