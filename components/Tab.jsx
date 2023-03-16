@@ -4,11 +4,11 @@ import { Cencel } from './svg'
 
 const Tab = () => {
   return (
-    <div>
-      
-       <button className={styles.tabMain}>Tag <Cencel className={styles.tabCencel} /></button>
 
-    </div>
+       <button className={styles.tabMain}>Tag
+       <span className={styles.tabCencel}> <Cencel /></span>
+       </button>
+  
   )
 }
 
