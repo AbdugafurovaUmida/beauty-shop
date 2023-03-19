@@ -12,7 +12,10 @@ import SocialContacts from "../components/SocialContacts";
 import Partners from "../components/Partners";
 import Tab from "../components/Tab"
 import CategoryCheckbox from "../components/CategoryCheckbox";
-
+import { useEffect, useState } from "react";
+import Posts from "../components/Posts";
+import axios from "axios";
+import Pagination from "../components/Pagination";
 // const inter = Inter({ subsets: ['latin'] })
 
 const brandCheckbox = [
@@ -68,7 +71,35 @@ const color = [
     name: "BB Creams ",
   },
 ];
+
+
 export default function Home() {
+ const [posts, setPosts] = useState([]);
+ const [loading, setLoading] = useState(false);
+ const [currentPage, setCurrentPage] = useState(1);
+ const [postsPerPage ] = useState(25);
+
+ useEffect(()=>{
+  const fetchPosts = async () => {
+    setLoading(true);
+    const res = await axios.get ('https://jsonplaceholder.typicode.com/posts')
+    setPosts(res.data)
+    setLoading(false)
+  }
+   fetchPosts()
+ }, [])
+
+// get current posts
+
+const indexOfLastPost = currentPage * postsPerPage;
+const indexOfFirstPost = indexOfLastPost - postsPerPage;
+const currentPosts = posts.slice(indexOfFirstPost, indexOfLastPost);
+
+// Change page
+
+const paginate = (pageNumber) => setCurrentPage(pageNumber)
+
+
   return (
     <>
       <Head>
@@ -95,7 +126,13 @@ export default function Home() {
         ))}
         <Tab/>
         <CategoryCheckbox />
-
+        <Posts posts={currentPosts} loading={loading}/>
+        <Pagination
+        previousLabel={"Prev"}
+        nextLabel={"Next"}
+        postsPerPage={postsPerPage} 
+        totalPosts={posts.length}
+        paginate={paginate}/>
         <Partners />
         <SocialContacts />
       </main>

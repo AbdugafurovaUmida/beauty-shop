@@ -1,0 +1,50 @@
+.pagination-container{
+   
+    
+}
+
+.pagination{
+    padding:20px 25px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.pageNumber{
+    padding:20px 25px;
+    background: #FFFFFF;
+    border: 1px solid #E9E9E9;
+    color: #23856D;
+}
+.prevButton{
+    padding: 25px;
+    background: #F3F3F3;
+    border: 1px solid #BDBDBD;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #BDBDBD;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius:8px;
+    cursor: pointer;
+}
+.nextButton{
+    padding: 25px;
+    background: #F3F3F3;
+    border: 1px solid #BDBDBD;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #BDBDBD;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius:8px;
+    cursor: pointer;
+}
