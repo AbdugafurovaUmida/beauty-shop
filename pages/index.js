@@ -10,6 +10,7 @@ import { GridDemo } from "../components/svg";
 import ColorChoose from "../components/ColorChoose";
 import SocialContacts from "../components/SocialContacts";
 import Partners from "../components/Partners";
+import SingleProductCard from "../components/SingleProductCard";
 
 // const inter = Inter({ subsets: ['latin'] })
 
@@ -82,6 +83,12 @@ export default function Home() {
         <Intro />
         <PopularitySelect />
         <SearchInput />
+        <br/>
+        <br/>
+        <SingleProductCard/>  
+        <br/>
+        <br/>
+        <br/>
         <ViewsButton viewsIcon={<LinearDemo />} />
         <ViewsButton viewsIcon={<GridDemo />} />
 

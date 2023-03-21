@@ -1,0 +1,67 @@
+.image {
+  position: relative;
+}
+
+.ImageFrame {
+  display: flex;
+  align-items: flex-end;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 28px;
+}
+.randomName {
+  position: absolute;
+  display: flex;
+  margin-bottom: 24px;
+  margin-left: 48px;
+  margin-right: 48px;
+}
+.whiteRound {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 45px;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+.cardTitle {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 26px;
+  letter-spacing: 0.1px;
+  color: #252b42;
+  margin-bottom: 8px;
+}
+
+.Prices {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  margin-bottom: 16px;
+}
+
+.initialPrice {
+  color: #bdbdbd;
+  margin-right: 5px;
+ 
+}
+
+.discountPrice {
+  color: #47ad97;
+}
+
+.reviews {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  color: #737373;
+  margin-left:11px;
+}
+
+.reviewLine{
+    display:flex;
+}
