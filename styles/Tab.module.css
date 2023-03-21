@@ -1,0 +1,19 @@
+.tabMain{
+    border: 1px solid #23856D;
+    border-radius: 5px;
+    align-items: center;
+    padding: 10px 15px;
+    background-color: #fff;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0.2px;
+    color: #23856D;
+
+}
+
+.tabCencel{
+    margin-left:11px;
+}
