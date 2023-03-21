@@ -29,11 +29,11 @@ export default function Intro() {
                 <div className="container">
                     <h2 className={styles.introTitle}>SHOP</h2>
                     <div className={styles.cardsWrapper}>
-                    {
-                        ShopTypes.map((card,i)=>(
-                            <ShopType key={i} data ={card} />
-                        ))
-                    }
+                        {
+                            ShopTypes.map((card, i) => (
+                                <ShopType key={i} data={card} />
+                            ))
+                        }
                     </div>
                 </div>
             </div>

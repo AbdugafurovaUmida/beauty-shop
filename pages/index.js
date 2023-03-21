@@ -10,6 +10,7 @@ import { GridDemo } from "../components/svg";
 import ColorChoose from "../components/ColorChoose";
 import SocialContacts from "../components/SocialContacts";
 import Partners from "../components/Partners";
+import SingleProductCard from "../components/SingleProductCard";
 import Tab from "../components/Tab"
 import CategoryCheckbox from "../components/CategoryCheckbox";
 
@@ -84,6 +85,12 @@ export default function Home() {
         <Intro />
         <PopularitySelect />
         <SearchInput />
+        <br/>
+        <br/>
+        <SingleProductCard/>  
+        <br/>
+        <br/>
+        <br/>
         <ViewsButton viewsIcon={<LinearDemo />} />
         <ViewsButton viewsIcon={<GridDemo />} />
 
