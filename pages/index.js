@@ -16,6 +16,7 @@ import { useEffect, useState } from "react";
 import Posts from "../components/Posts";
 import axios from "axios";
 import Pagination from "../components/Pagination";
+
 // const inter = Inter({ subsets: ['latin'] })
 
 const brandCheckbox = [
@@ -79,6 +80,7 @@ export default function Home() {
  const [currentPage, setCurrentPage] = useState(1);
  const [postsPerPage ] = useState(25);
 
+
  useEffect(()=>{
   const fetchPosts = async () => {
     setLoading(true);
@@ -97,9 +99,20 @@ const currentPosts = posts.slice(indexOfFirstPost, indexOfLastPost);
 
 // Change page
 
-const paginate = (pageNumber) => setCurrentPage(pageNumber)
+const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
 
+const previousPage = () => {
+  if (currentPage !== 1) {
+     setCurrentPage(currentPage - 1);
+  }
+};
+
+const nextPage = () => {
+  if (currentPage !== Math.ceil(posts.length / postsPerPage)) {
+     setCurrentPage(currentPage + 1);
+  }
+};
   return (
     <>
       <Head>
@@ -128,11 +141,12 @@ const paginate = (pageNumber) => setCurrentPage(pageNumber)
         <CategoryCheckbox />
         <Posts posts={currentPosts} loading={loading}/>
         <Pagination
-        previousLabel={"Prev"}
-        nextLabel={"Next"}
+       previousPage={previousPage}
+       nextPage={nextPage}
         postsPerPage={postsPerPage} 
         totalPosts={posts.length}
-        paginate={paginate}/>
+        paginate={paginate}
+        currentPage={currentPage}/>
         <Partners />
         <SocialContacts />
       </main>
